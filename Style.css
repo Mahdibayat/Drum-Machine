@@ -1,0 +1,76 @@
+body{
+    background-image: url("http://uupload.ir/files/0123_abstract_35.jpg");
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+#drum-machine{
+    width: 600px;
+    height: 300px;
+    background-image: linear-gradient(40deg, #cccc00, #b3ff66, #99ffff, #00ffff);
+    margin: auto;
+    position: relative;
+    top: 30vh;
+    border-radius: 60px;
+    border: solid 5px #ff471a;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+#btnDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding : 28px;
+    grid-gap: 15px;
+}
+.drum-pad{
+    border: solid 2px #009999;
+    border-radius: 25px;
+    background-color: brown;
+    color: yellow;
+    font-size: 24px;
+    box-shadow: #404040 5px 5px 9px;
+    transition: 200ms;
+    cursor: pointer;
+    outline: none;
+}
+.drum-pad:hover{
+    color: #cccc00;
+}
+.drum-pad:active{
+    transform: scale(0.99) translateY(2px);
+    box-shadow: #404040 2px 2px 9px;
+}
+#infoDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+#power-div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #666666;
+    margin: 10px auto 30px auto;
+}
+#power-btn{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color: #3399ff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+#display{
+    width: auto;
+    height: 50px;
+    background-color: silver;
+    margin-bottom: 33px;
+}
+#volume{
+
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drume Machine</title>
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <link type="text/css" rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="drum-machine">
+        <div id="btnDiv">
+            <button type="button" class="drum-pad" >Q</button>
+            <button type="button" class="drum-pad" >W</button>
+            <button type="button" class="drum-pad" >E</button>
+            <button type="button" class="drum-pad" >A</button>
+            <button type="button" class="drum-pad" >S</button>
+            <button type="button" class="drum-pad" >D</button>
+            <button type="button" class="drum-pad" >Z</button>
+            <button type="button" class="drum-pad" >X</button>
+            <button type="button" class="drum-pad" >C</button>
+        </div>
+        <div id="infoDiv">
+            <label for="power-btn">Power</label>
+            <div id="power-div"><button onclick="powerBtn()" id="power-btn"></button></div>
+            <div id="display"></div>
+            <label for="volume">Volume<input type="range" id="volume"></label>
+        </div>
+    </div>
+</body>
+</html>
