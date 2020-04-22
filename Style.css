@@ -66,8 +66,9 @@ body{
     border: none;
 }
 #display{
+    color: darkblue;
     width: auto;
-    height: 50px;
+    height: 70px;
     background-color: silver;
     margin-bottom: 33px;
 }
