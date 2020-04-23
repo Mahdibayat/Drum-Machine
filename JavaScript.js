@@ -7,7 +7,7 @@ function qSong() {
     }
     q.volume = 0.75;
     var r = document.getElementById('display');
-    r.innerHTML = '<p><b>the sea sounge</b> ...<br /> Duration: 00:57</p>';
+    r.innerHTML = '<p><b>دریا</b></p>';
 }
 function wSong() {
     w = document.getElementById('wSong');
@@ -18,7 +18,7 @@ function wSong() {
     }
     w.volume= 0.75;
     var r = document.getElementById('display');
-    r.innerHTML = '<p><b>the sea sounge</b> ...<br /> Duration: 01:40</p>'
+    r.innerHTML = '<p><b>پرندگان در صبح</b></p>'
 }
 function eSong() {
     e = document.getElementById('eSong');
@@ -28,7 +28,7 @@ function eSong() {
         e.pause();
     }
     var r = document.getElementById('display');
-    r.innerHTML = '<p><b>Fire</b><br /> Duration: 00:38</p>'
+    r.innerHTML = '<p><b> آتش </b></p>'
 }
 function aSong() {
     a = document.getElementById('aSong');
@@ -38,7 +38,7 @@ function aSong() {
         a.pause();
     }
     var r = document.getElementById('display');
-    r.innerHTML = '<p><b>Rain <3</b> ...<br /> Duration: 01:40</p>'
+    r.innerHTML = '<p><b>باران</b></p>'
 }
 function sSong() {
     s = document.getElementById('sSong');
@@ -49,7 +49,7 @@ function sSong() {
     }
     s.volume=0.4;
     var r = document.getElementById('display');
-    r.innerHTML = '<p><b>Gitar</b> ...<br /> Duration: 03:15</p>'
+    r.innerHTML = '<p><b>موزیک گیتار</b></p>'
 }
 function dSong() {
     d = document.getElementById('dSong');
@@ -59,7 +59,7 @@ function dSong() {
         d.pause();
     }
     var r = document.getElementById('display');
-    r.innerHTML = '<p><b>Dog barking</b> ...<br /> Duration: 01:40</p>'
+    r.innerHTML = '<p><b>پارس سگ</b></p>'
 }
 function zSong() {
     z = document.getElementById('zSong');
@@ -69,7 +69,7 @@ function zSong() {
         z.pause();
     }
     var r = document.getElementById('display');
-    r.innerHTML = '<p><b>Wind</b> ...<br /> Duration: 01:29</p>'
+    r.innerHTML = '<p><b>باد</b></p>'
 }
 function xSong() {
     x = document.getElementById('xSong');
@@ -80,7 +80,7 @@ function xSong() {
     }
     x.volume = 0.45;
     var r = document.getElementById('display');
-    r.innerHTML = '<p><b>Night and car</b> ...<br /> Duration: 03:31</p>'
+    r.innerHTML = '<p><b>شب اتومبیل</b></p>'
 }
 function cSong() {
     c = document.getElementById('cSong');
@@ -91,17 +91,15 @@ function cSong() {
     }
     c.volume = 0.7;
     var r = document.getElementById('display');
-    r.innerHTML = '<p><b>Ducks</b> ...<br /> Duration: 01:28</p>'
+    r.innerHTML = '<p><b>مرغابی</b></p>'
 }
-
-function pausee(){
-    q.pause();
-    w.pause();
-    e.pause();
-    a.pause();
-    s.pause();
-    d.pause();
-    z.pause();
-    x.pause();
-    c.pause();
+function Volomee() {
+    var x = document.getElementById('volumee');
+    var val = x.value;
+    var code = document.getElementById('code').value;
+    var y = document.getElementById(code + 'Song');
+    y.volume = val / 10;
+}
+function pausee() {
+    
 }

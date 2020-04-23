@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto+Mono:wght@300&display=swap');
 body{
+    background-color: saddlebrown;
     background-image: url("http://uupload.ir/files/0123_abstract_35.jpg");
     height: 100vh;
     width: 100%;
     text-align: center;
     padding: 10px;
+    color: darkblue;
+    text-shadow: 1px 1px 9px darkblue;
+    overflow: hidden;
+}
+#note {
+    color: #39f5c9;
+    font-family: 'Lalezar', cursive;
+    text-shadow: 2px 2px 8px darkblue;
 }
 #drum-machine{
     width: 600px;
@@ -11,7 +21,7 @@ body{
     background-image: linear-gradient(40deg, #cccc00, #b3ff66, #99ffff, #00ffff);
     margin: auto;
     position: relative;
-    top: 30vh;
+    top: 10vh;
     border-radius: 60px;
     border: solid 5px #ff471a;
     display: grid;
@@ -46,7 +56,6 @@ body{
     display: flex;
     flex-direction: column;
     padding: 30px;
-
 }
 #power-div{
     width: 30px;
@@ -66,12 +75,26 @@ body{
     border: none;
 }
 #display{
+    border-radius: 5px;
     color: darkblue;
     width: auto;
-    height: 70px;
-    background-color: silver;
+    height: 50px;
+    background-color: #c4d3ca;
     margin-bottom: 33px;
 }
-#volume{
-
+#author{
+    color: #39f5c9;
+    position: relative;
+    margin: 30vh auto 10px auto;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 3px 3px 4px darkblue;
+}
+#code{
+    background: none;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    text-shadow: 1px 1px 12px darkblue;
 }

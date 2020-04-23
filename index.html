@@ -7,50 +7,51 @@
     <link type="text/css" rel="stylesheet" href="Style.css">
 </head>
 <body>
-<audio id="qSong">
+<audio id="qSong" loop>
     <source src="https://bigsoundbank.com/UPLOAD/ogg/0267.ogg" type="audio/ogg">
     <source src="https://bigsoundbank.com/UPLOAD/mp3/0267.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-<audio id="wSong">
+<audio id="wSong" loop>
     <source src="https://bigsoundbank.com/UPLOAD/ogg/0935.ogg" type="audio/ogg">
     <source src="https://bigsoundbank.com/UPLOAD/mp3/0935.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-<audio id="eSong">
+<audio id="eSong" loop>
     <source src="https://bigsoundbank.com/UPLOAD/ogg/0987.ogg" type="audio/ogg">
     <source src="https://bigsoundbank.com/UPLOAD/mp3/0987.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-<audio id="aSong">
+<audio id="aSong" loop>
     <source src="https://bigsoundbank.com/UPLOAD/ogg/0740.ogg" type="audio/ogg">
     <source src="https://bigsoundbank.com/UPLOAD/mp3/0740.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-<audio id="sSong">
+<audio id="sSong" loop>
     <source src="https://www.bensound.com/bensound-music/bensound-adaytoremember.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-<audio id="dSong">
+<audio id="dSong" loop>
     <source src="https://bigsoundbank.com/UPLOAD/ogg/1060.ogg" type="audio/ogg">
     <source src="https://bigsoundbank.com/UPLOAD/mp3/1060.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-<audio id="zSong">
+<audio id="zSong" loop>
     <source src="https://bigsoundbank.com/UPLOAD/ogg/0595.ogg" type="audio/ogg">
     <source src="https://bigsoundbank.com/UPLOAD/mp3/0595.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-<audio id="xSong">
+<audio id="xSong" loop>
     <source src="https://bigsoundbank.com/UPLOAD/ogg/1066.ogg" type="audio/ogg">
     <source src="https://bigsoundbank.com/UPLOAD/mp3/1066.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-<audio id="cSong">
+<audio id="cSong" loop>
     <source src="https://media.rasekhoon.net/003/pr/h1/18/Sound-Effects/18_SoundEffects_6003_10(www.rasekhoon.net).mp3"
             type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
+        <h1 id="note">هندسفری خودتو متصل کن<br /> فضای رویاهای خودتو بساز</h1>
     <div id="drum-machine">
         <div id="btnDiv">
             <button type="button" class="drum-pad" onclick="qSong()">Q</button>
@@ -64,11 +65,24 @@
             <button type="button" class="drum-pad" onclick="cSong()">C</button>
         </div>
         <div id="infoDiv">
-            <label for="power-btn">Stop</label>
+            <label for="power-btn">خاموش</label>
             <div id="power-div"><button onclick="pausee()" id="power-btn"></button></div>
             <div id="display"></div>
-            <label for="volume">Volume<input type="range" id="volume"></label>
+            <label for="volume">میزان صدا :
+                <select id="code" >
+                    <option value="q">Q</option>
+                    <option value="w">W</option>
+                    <option value="e">E</option>
+                    <option value="a">A</option>
+                    <option value="s">S</option>
+                    <option value="d">D</option>
+                    <option value="z">Z</option>
+                    <option value="x">X</option>
+                    <option value="c">C</option>
+                </select>
+                <input type="range" id="volumee" min="0" max="10" value="8" onmouseup="Volomee()"> </label>
         </div>
     </div>
+        <h2 id="author">design and code by<br />Mahdi Bayat</h2>
 </body>
 </html>
