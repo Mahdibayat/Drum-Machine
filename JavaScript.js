@@ -101,5 +101,13 @@ function Volomee() {
     y.volume = val / 10;
 }
 function pausee() {
-    
+    q.pause();
+    w.pause();
+    e.pause();
+    a.pause();
+    s.pause();
+    d.pause();
+    z.pause();
+    x.pause();
+    c.pause();
 }
