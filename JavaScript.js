@@ -1,3 +1,25 @@
+function keyPress() {
+    var x = event.which;
+    if(x == 113){
+        qSong();
+    }else if(x == 119){
+        wSong();
+    }else if(x == 101){
+        eSong();
+    }else if(x == 97){
+        aSong();
+    }else if(x == 115){
+        sSong();
+    }else if(x == 100){
+        dSong();
+    }else if(x == 122){
+        zSong();
+    }else if(x == 120){
+        xSong();
+    }else if(x == 99){
+        cSong();
+    }
+}
 function qSong() {
     q = document.getElementById('qSong');
     if (q.paused) {
@@ -101,13 +123,7 @@ function Volomee() {
     y.volume = val / 10;
 }
 function pausee() {
-    q.pause();
-    w.pause();
-    e.pause();
-    a.pause();
-    s.pause();
-    d.pause();
-    z.pause();
-    x.pause();
-    c.pause();
+    q.pause();w.pause();e.pause();
+    a.pause();s.pause();d.pause();
+    z.pause();x.pause();c.pause();
 }

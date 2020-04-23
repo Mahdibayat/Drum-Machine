@@ -6,7 +6,7 @@
     <script type="text/javascript" src="JavaScript.js"></script>
     <link type="text/css" rel="stylesheet" href="Style.css">
 </head>
-<body>
+<body onkeypress="keyPress()">
 <audio id="qSong" loop>
     <source src="https://bigsoundbank.com/UPLOAD/ogg/0267.ogg" type="audio/ogg">
     <source src="https://bigsoundbank.com/UPLOAD/mp3/0267.mp3" type="audio/mpeg">
@@ -68,7 +68,7 @@
             <label for="power-btn">خاموش</label>
             <div id="power-div"><button onclick="pausee()" id="power-btn"></button></div>
             <div id="display"></div>
-            <label for="volume">میزان صدا :
+            <label for="volumee">میزان صدا :
                 <select id="code" >
                     <option value="q">Q</option>
                     <option value="w">W</option>
